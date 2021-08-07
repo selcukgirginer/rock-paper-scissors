@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+<div class="Wrapper">
+    <div class="score">
+        <table>
+            <tr>
+                <td>0</td>
+                <td style="font-size: 30px; border: none;">VS</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="left">
+        <img src="src/Object/rock.png">
+        <br>
+        <br>
+        <label>Computer</label>
+    </div>
+    <div class="right">
+        <img src="src/Object/rock.png">
+        <br> <br>
+        <label>Player</label>
+    </div>
+    <div class="choice">
+        <img class="orock" src="src/Object/rock.png" onclick="rock()">
+        <img class="orock" src="src/Object/paper.png" onclick="paper()">
+        <img class="orock" src="src/Object/sci.png" onclick="sci()">
+    </div>
+</div>
+        <script src="app.js"> </script>
+    </body>
+    </html>
