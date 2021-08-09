@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Basic rock paper scissors game ">
+        <meta name="keywords" content="rock, paper, scissors, game">
+        <meta name="author" content="Mustafa Selçuk Girginer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
@@ -8,27 +13,27 @@
     <div class="score">
         <table>
             <tr>
-                <td>0</td>
+                <td id="computer">0</td>
                 <td style="font-size: 30px; border: none;">VS</td>
-                <td>0</td>
+                <td id="player">0</td>
             </tr>
         </table>
     </div>
     <div class="left">
-        <img src="src/Object/rock.png">
+        <img id="leftimg" src="src/Hand/left-rock.png">
         <br>
         <br>
         <label>Computer</label>
     </div>
     <div class="right">
-        <img src="src/Object/rock.png">
+        <img id="rightimg" src="src/Hand/right-rock.png">
         <br> <br>
         <label>Player</label>
     </div>
     <div class="choice">
-        <img class="orock" src="src/Object/rock.png" onclick="rock()">
-        <img class="orock" src="src/Object/paper.png" onclick="paper()">
-        <img class="orock" src="src/Object/sci.png" onclick="sci()">
+        <img class="orock" src="src/Hand/right-rock.png" onclick="check(1)">
+        <img class="orock" src="src/Hand/right-paper.png" onclick="check(1)">
+        <img class="orock" src="src/Hand/right-sci.png" onclick="check(2)">
     </div>
 </div>
         <script src="app.js"> </script>
